@@ -5,8 +5,6 @@ import (
 	"strings"
 )
 
-
-
 func main() {
 	fmt.Println("Please, enter your name.")
 	var name string
