@@ -12,6 +12,8 @@ func main() {
 	fmt.Printf("Hi, %s!", name)
 	name = strings.TrimSpace(name)
 
+	fmt.Println("Enter an options:")
+	fmt.Println("Enter an options:")
 }
 
 // to be continued
