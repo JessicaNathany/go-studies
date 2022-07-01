@@ -1,5 +1,5 @@
 # go-studies
-This repository represents my Go 
+This repository represents my studies in Go 
 
 
 #### Reference and documentation: 
