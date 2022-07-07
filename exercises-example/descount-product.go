@@ -6,12 +6,6 @@ import (
 	"fmt"
 )
 
-type Person struct {
-	Name               string
-	Salary             float64
-	DescountPercentage int
-}
-
 func ProductCalculate(productPrice float64) float64 {
 
 	descountPercentage := productPrice * 5 / 100
