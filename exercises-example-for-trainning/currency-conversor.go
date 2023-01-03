@@ -20,57 +20,62 @@ type CurrencyValue struct {
 
 func main() {
 
-	fmt.Println("Select your actual currency: ")
-	fmt.Println("1.\tUSD \n2.\tEUR \n3.\tBRL \n4.\tAUD \n5.\tCAD")
+	fmt.Println("What value do you want to convert: ")
 
-	var actualCurrency int
-	fmt.Scanln(&actualCurrency)
+	var convertValue float
+	fmt.Scanln(&convertValue)
 
 	fmt.Println("Select the currency to do the conversion : ")
 	fmt.Println("1.\tSee balance \n2.\tWithdraw Money \n3.\tTransfer \n4.\tDeposit")
 
-	var currencyConvert int
-	fmt.Scanln(&currencyConvert)
+	var currencyOptions int
+	fmt.Scanln(&currencyOptions)
 
-	CurrencyConvert(actualCurrency, currencyConvert)
-
+	CurrencyConvert(convertValue, currencyOptions)
 }
 
-func CurrencyConvert(option int, actualCurrency int) {
+func CurrencyConvert(option int, convertValue int) {
 
 	switch option {
 	case 1:
-		ConvertToDolar(actualCurrency)
+		ConvertToDolar(convertValue)
 	case 2:
-		ConvertToEuro(actualCurrency)
+		ConvertToEuro(convertValue)
 	case 3:
-		ConvertToBRL(actualCurrency)
+		ConvertToBRL(convertValue)
 	case 4:
-		ConvertToAUD(actualCurrency)
+		ConvertToAUD(convertValue)
 	case 5:
-		ConvertToCAD(actualCurrency)
+		ConvertToCAD(convertValue)
 	default:
 		fmt.Println("Options not found")
 	}
 
 }
 
-func ConvertToDolar(actualCurrency int) {
-// to calculate
+func ConvertToDolar(convertValue int) {
+
+	var dolar = CurrencyValue{"USD", 5.36, "EUA"}
+	var conversionValue = convertValue / int(dolar.Value)
+
+	fmt.Println("\tCom ", convertValue)
+	fmt.Println("\tYou can buy ", conversionValue)
+
+	// to calculate
 }
 
 func ConvertToEuro(actualCurrency int) {
-// to calculate
+	// to calculate
 }
 
 func ConvertToBRL(actualCurrency int) {
-// to calculate
+	// to calculate
 }
 
 func ConvertToAUD(actualCurrency int) {
-// to calculate
+	// to calculate
 }
 
 func ConvertToCAD(actualCurrency int) {
-// to calculate
+	// to calculate
 }
